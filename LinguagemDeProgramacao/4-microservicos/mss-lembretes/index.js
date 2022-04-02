@@ -1,10 +1,7 @@
 
 const express = require('express')
 const app = express()
-app.use((req, res, next) => {
-    console.log("oi")
-    next()
-})
+
 app.use(express.json())
 
 const lembretes = {}
