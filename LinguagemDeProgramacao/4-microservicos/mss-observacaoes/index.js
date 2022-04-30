@@ -23,6 +23,7 @@ app.get('/lembretes/:id/observacoes', (req, res) => {
     res.send(observacoesPorLembreteId[req.params.id] || [])
 })
 
+
 app.listen(5000, () => {
     console.log('Servidor rodando na porta 5000')
 })
